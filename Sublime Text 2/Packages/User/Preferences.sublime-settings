@@ -1,0 +1,15 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"ignored_packages":
+	[
+	],
+	"rulers":
+	[
+		80
+	],
+	"soda_classic_tabs": true,
+	"theme": "Soda Dark.sublime-theme",
+	"vintage_ctrl_keys": true,
+	"vintage_start_in_command_mode": true
+}

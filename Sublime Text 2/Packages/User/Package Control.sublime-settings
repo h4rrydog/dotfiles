@@ -1,0 +1,25 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"Autocomplete Javascript with Method Signature",
+		"BracketHighlighter",
+		"Codeigniter Codeintel Helper",
+		"DocBlockr",
+		"Drupal Project Autocomplete",
+		"Drupal Snippets",
+		"Git",
+		"GitGutter",
+		"Goto Documentation",
+		"Goto Drupal API",
+		"Jade",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeBlockCursor",
+		"SublimeLinter",
+		"Theme - Soda",
+		"Twig"
+	]
+}
