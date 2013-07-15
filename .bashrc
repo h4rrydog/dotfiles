@@ -134,3 +134,8 @@ PS1="\[\033[1;31m\]\u \[\033[1;37m\]at \[\033[1;33m\]\h \[\033[1;37m\]in \[\033[
 
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
+
+# todo.txt
+source /usr/local/Cellar/todo-txt/2.9/etc/bash_completion.d/todo_completion complete -F _todo t
+alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -a -d $HOME/Dropbox/Apps/todo/todo.cfg'
+alias todo='t lsp a'
