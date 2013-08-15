@@ -6,5 +6,5 @@
         "load-save" - Linting occurs only when a file is loaded and saved.
         "save-only" - Linting occurs only when a file is saved.
     */
-    "sublimelinter": false 
+    "sublimelinter": true 
 }
