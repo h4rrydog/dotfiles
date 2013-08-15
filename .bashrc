@@ -137,5 +137,4 @@ export LESS=' -R '
 
 # todo.txt
 source /usr/local/Cellar/todo-txt/2.9/etc/bash_completion.d/todo_completion complete -F _todo t
-alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -a -d $HOME/Dropbox/Apps/todo/todo.cfg'
-alias todo='t lsp a'
+alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -a -d $HOME/Dropbox/todo/todo.cfg'
