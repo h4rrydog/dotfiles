@@ -1,0 +1,17 @@
+[user]
+	name = h4rrydog
+	email = ifung@guanxin.de
+[core]
+	symlinks = false
+	autocrlf = input
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = true
+[rebase]
+	autosquash = true
+[alias]
+	hist = log --pretty=format:'%h %ad | %s %d [%an]' --graph --date=short
+[push]
+	default = matching
