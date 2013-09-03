@@ -132,9 +132,14 @@ function parse_git_branch() {
 #PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]\[\033[1;31m\]\u \[\033[1;37m\]at \[\033[1;33m\]\h \[\033[1;37m\]in \[\033[1;32m\]\w\[\033[1;37m\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[\033[1;35m\]\$(parse_git_branch)\[\033[1;37m\]\n\$ \[\033[m\]"
 PS1="\[\033[1;31m\]\u \[\033[1;37m\]at \[\033[1;33m\]\h \[\033[1;37m\]in \[\033[1;32m\]\w\[\033[1;37m\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[\033[1;35m\]\$(parse_git_branch)\[\033[1;37m\]\n\$ \[\033[m\]"
 
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+# Source-highlight config
+export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.7/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 
 # todo.txt
 source /usr/local/Cellar/todo-txt/2.9/etc/bash_completion.d/todo_completion complete -F _todo t
 alias t='/usr/local/Cellar/todo-txt/2.9/bin/todo.sh -a -d $HOME/Dropbox/todo/todo.cfg'
+
+# MAMP Pro
+export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php5.4/bin:$PATH"
+export PHP_INI='/Applications/MAMP/bin/php/php5.4.10/conf/php.ini'
