@@ -4,6 +4,7 @@
 [core]
 	symlinks = true 
 	autocrlf = input
+	excludesfile = /Users/h4rrydog/.gitignore_global
 [color]
 	diff = auto
 	status = auto
@@ -14,4 +15,8 @@
 [alias]
   hist = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 [push]
-	default = matching
+	default = simple 
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
