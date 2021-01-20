@@ -34,13 +34,13 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -82,9 +82,11 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alFG'
+alias la='ls -AG'
+alias l='ls -CFG'
+alias gs='git status'
+alias gh='git hist'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -136,8 +138,8 @@ export LESSOPEN="| /usr/local/Cellar/source-highlight/3.1.7/bin/src-hilite-lessp
 export LESS=' -R '
 
 # todo.txt for shell
-source /usr/local/Cellar/todo-txt/2.10/etc/bash_completion.d/todo_completion complete -F _todo t
-alias t='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -a -d $HOME/Dropbox/Apps/todo/todo.cfg'
+# source /usr/local/Cellar/todo-txt/2.10/etc/bash_completion.d/todo_completion complete -F _todo t
+# alias t='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -a -d $HOME/Dropbox/Apps/todo/todo.cfg'
 
 # MAMP Pro for shell
 export PATH="/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.4.19/bin:$PATH"
@@ -145,3 +147,4 @@ export PHP_INI='/Applications/MAMP/bin/php/php5.4.19/conf/php.ini'
 
 # Add Homebrew path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$(brew --prefix ruby)/bin:$PATH
